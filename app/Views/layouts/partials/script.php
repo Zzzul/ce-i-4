@@ -2,6 +2,12 @@
 <?= script_tag('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') ?>
 <?= script_tag('https://cdn.jsdelivr.net/npm/sweetalert2@11') ?>
 
+<?= script_tag('assets/js/sidebarmenu.js') ?>
+<?= script_tag('assets/js/app.min.js') ?>
+<?= script_tag('assets/libs/apexcharts/dist/apexcharts.min.js') ?>
+<?= script_tag('assets/libs/simplebar/dist/simplebar.js') ?>
+<?= script_tag('assets/js/dashboard.js') ?>
+
 <script>
 
   const Toast = Swal.mixin({

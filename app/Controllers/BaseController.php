@@ -8,6 +8,7 @@ use CodeIgniter\HTTP\CLIRequest;
 use CodeIgniter\HTTP\IncomingRequest;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
+use Config\Services;
 use Psr\Log\LoggerInterface;
 
 abstract class BaseController extends Controller
@@ -19,6 +20,8 @@ abstract class BaseController extends Controller
      */
     protected $request;
 
+    protected $validation;
+
     protected $helpers = ['html', 'form', 'url'];
 
     protected $user_model;
@@ -27,8 +30,11 @@ abstract class BaseController extends Controller
     {
         parent::initController($request, $response, $logger);
 
+        
         $this->request = $request;
-
+        
+        $this->validation = Services::validation();
+        
         $this->user_model = new User();
     }
 }

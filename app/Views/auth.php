@@ -15,7 +15,15 @@
                 </a>
                 <p class="text-center">Your Social Campaigns</p>
                 
-                <?= $this->setVar('error', session()->getFlashdata('error'))->render('components/alert') ?>
+                <?php
+                  if (session()->has('errors')) {
+                    echo '<div class="alert alert-danger" role="alert">';
+                    foreach (session('errors') as $error) {
+                      echo $error . '<br>';
+                    }
+                    echo '</div>';
+                  }
+                ?>
 
                 <?= form_open('auth/create', ['x-data' => '{ submit: false }', '@submit' => 'submit = true']) ?>
                   <div class="mb-3">
