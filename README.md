@@ -23,10 +23,13 @@ When updating, check the release notes to see if there are any changes you might
 to your `app` folder. The affected files can be copied or merged from
 `vendor/codeigniter4/framework/app`.
 
-## Setup
+`cp env .env` and tailor for your app, specifically the baseURL, and any database settings.
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+`php spark migrate` to create the default database tables.
+
+`php spark db:seed SeedAll` to populate the database with the default data.
+
+`php spark serve` to run the project.
 
 ## Important Change with index.php
 
