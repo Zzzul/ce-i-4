@@ -12,7 +12,7 @@
     <!-- Sidebar navigation-->
     <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
       <hr class="mb-0 mt-4">
-      <button type="button" class="btn btn-outline-primary btn-block w-100 py-2 mb-4 d-none d-md-block"><i class="ti ti-plus me-2"></i> Tambah Postingan</button>
+      <a class="btn btn-outline-primary btn-block w-100 py-2 mb-4 d-none d-md-block" href="<?= url_to('Admin\PostController::new') ?>"><i class="ti ti-plus me-2"></i> Tambah Postingan</a>
       <ul id="sidebarnav">
         <!-- <li class="nav-small-cap">
           <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
