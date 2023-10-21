@@ -1,29 +1,8 @@
 <header class="app-header">
   <nav class="navbar navbar-expand-lg navbar-light">
-    <ul class="navbar-nav">
-      <li class="nav-item d-block d-xl-none">
-        <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
-          <i class="ti ti-menu-2"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <!-- <a class="nav-link nav-icon-hover" href="javascript:void(0)">
-          <i class="ti ti-bell-ringing"></i>
-          <div class="notification bg-primary rounded-circle"></div>
-        </a> -->
-
-        <div class="dropdown">
-          <a class="nav-link nav-icon-hover" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="ti ti-bell-ringing"></i>
-            <div class="notification bg-primary rounded-circle"></div>
-          </a>
-
-          <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Notifikasi 1</a></li>
-            <li><a class="dropdown-item" href="#">Notifikasi 2</a></li>
-            <li><a class="dropdown-item" href="#">Notifikasi 3</a></li>
-          </ul>
-        </div>
+    <ul class="navbar-nav w-100">
+      <li class="nav-item d-flex align-items-center gap-2">
+        <a href="#" class="fw-bold" style="font-size: 18px;"><i class="ti ti-chevron-left" style="line-height: 3;"></i></a><?= $title ?>
       </li>
     </ul>
     <div class="navbar-collapse justify-content-end px-0" id="navbarNav">

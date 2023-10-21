@@ -6,8 +6,7 @@
 <?= script_tag('assets/js/app.min.js') ?>
 <?= script_tag('assets/libs/apexcharts/dist/apexcharts.min.js') ?>
 <?= script_tag('assets/libs/simplebar/dist/simplebar.js') ?>
-<?= script_tag('assets/js/dashboard.js') ?>
-
+<?= script_tag('https://cdn.datatables.net/v/bs5/dt-1.13.6/r-2.5.0/datatables.min.js') ?>
 <script>
 
   const Toast = Swal.mixin({

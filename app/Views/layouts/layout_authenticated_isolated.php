@@ -4,33 +4,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modernize Free</title>
+  <title>Modernize Free Isolated</title>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <?= $this->include('layouts/partials/style') ?>
+  <?= $this->renderSection('style') ?>
 </head>
 
 <body>
   <!--  Body Wrapper -->
-  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-    data-sidebar-position="fixed" data-header-position="fixed">
+  <div class="page-wrapper" id="main-wrapper" data-navbarbg="skin6">
     <!-- Sidebar Start -->
-    <?= $this->include('layouts/partials/sidebar') ?>
     <!--  Sidebar End -->
     <!--  Main wrapper -->
     <div class="body-wrapper">
       <!--  Header Start -->
-      <?= $this->include('layouts/partials/header') ?>
+      <?= $this->include('layouts/partials/header_isolated') ?>
       <!--  Header End -->
       <div class="container-fluid">
         <!--  Row 1 -->
-        <div id="content" style="min-height: 79vh;">
+        <div id="content">
           <?= $this->renderSection('content') ?>
         </div>
       </div>
     </div>
   </div>
   <?= $this->include('layouts/partials/script') ?>
-
   <?= $this->renderSection('script') ?>
 </body>
 

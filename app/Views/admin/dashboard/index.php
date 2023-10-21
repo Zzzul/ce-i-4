@@ -349,3 +349,9 @@
 </div>
 
 <?= $this->endSection(); ?>
+
+<?= $this->section('script'); ?>
+
+<?= script_tag('assets/js/dashboard.js') ?>
+
+<?= $this->endSection(); ?>
