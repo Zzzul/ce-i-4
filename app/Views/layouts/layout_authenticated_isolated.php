@@ -20,11 +20,8 @@
       <!--  Header Start -->
       <?= $this->include('layouts/partials/header_isolated') ?>
       <!--  Header End -->
-      <div class="container-fluid">
-        <!--  Row 1 -->
-        <div id="content">
-          <?= $this->renderSection('content') ?>
-        </div>
+      <div id="content w-100" style="padding: 0 25px;">
+        <?= $this->renderSection('content') ?>
       </div>
     </div>
   </div>
